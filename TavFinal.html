@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <script src="TavFinalJava.js" defer></script>
+    <title>Task Manager</title>
+    <style>
+        #fieldset1 {
+            display: block;
+            margin: 1.0em auto;
+            text-align: center;
+            border: 2px solid CadetBlue;
+            width:450px;
+            font-size:18px;
+        }
+        table {
+            width: 70%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        td {
+            padding: 10px;
+            font-size: 18px;
+            text-align: center;
+        }
+        .strike{
+            text-decoration: line-through;
+        }
+        .important{
+            background-color: tomato;
+        }
+        
+    </style>
+</head>
+<body style="text-align:center; background-color:lightcyan;">
+    <h1>Task Manager</h1>
+         
+    <form id="form">
+        <fieldset id="fieldset1">
+            <legend>Add Tasks</legend>
+            <input type="text" id="taskname" placeholder="write task here"/>
+            
+             <select id="dropdown">
+                 <option value="high">High</option>
+                 <option value="medium">Medium</option>
+                 <option value="low">Low</option>
+             </select>
+
+             <input type="checkbox" id="important_check" />
+             <label for="important_check">Important</label>
+
+             <input type="submit" id="submit" value="Add Task" />
+        </fieldset>
+    </form>
+    
+
+    <div id="taskmanager" style="text-align:center;">
+        <table>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
